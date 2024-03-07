@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css">
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="./app.js"></script>
+  <title>Acme Filmes</title>
+</head>
+<body class="relative overflow-hidden">
+
+  <header class="bg-neutral-500 p-0 flex items-center space-x-16 justify-between relative z-10">
+
+    <nav class="ml-12 mt-2 flex items-center justify-between space-x-16">
+      <img src="./styles/img/acme.png" alt="">
+
+      <div class="flex items-center space-x-8">
+        <a href="#" class="text-black font-bold hover:text-white">Início</a>
+        <a href="#" class="text-black font-bold hover:text-white">Filmes</a>
+        <a href="#" class="text-black font-bold hover:text-white">Séries</a>
+        <a href="#" class="text-black font-bold hover:text-white">Minha Lista</a>
+      </div>
+    </nav>
+
+    <div class=" p-10 flex items-center space-x-3">
+      <img src="./styles/img/busca.png" alt="">
+      <img src="./styles/img/sino.png" alt="">
+      <img src="./styles/img/conta.png" alt="">
+      <img src="./styles/img/triangulo.png" alt="">
+    </div>
+
+  </header>
+
+  <main class="relative overflow-hidden bg-image" id="main">
+    <img class="ml-36 mt-96" src="./styles/img/assistir.png" alt="">
+    <img  class="ml-96 -mt-10"   src="./styles/img/info.png" alt="">
+
+
+    <div class="filmes h-96 mt-16">
+        <h1 class="text-red-600 font-sans ml-10 text-xl font-bold mt-10">Filmes</h1>
+
+        <div class="listaDeFilmes p-10" id="listaDeFilmes"></div>
+    </div>
+  </main>
+</body>
+</html>
